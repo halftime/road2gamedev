@@ -12,10 +12,17 @@
     * Lobby scoreboard
 * Don't crash
 * MM to Quick match public lobby
-* limit risk for client side manipulation
+* Limit risk for client side manipulation
   * offload critical tasks to server side
   * verify client data?
       * timestamp & checksum?
+* Clients game menus
+     * text, size, navigation, ...
+* Hotkeys
+   * ESC : quit game? verify
+   * TAB : display score/...
+     
+
 
 
 ### Server
@@ -24,17 +31,21 @@
 * Keepalive / ping clients 5s?
   * calc client latency/ping
   * remove disconnected clients
-* Hardwired server "tick" 30/60/? fps for each player
-  * 
+* Fixed server "tick" 30/60/? fps for each player
 * Update client changes & broadcast to other players
   * position, ...
       * player collision
       * map walls & dimensions
   * damage, health, ...
-    * gatekeep dead & alive
+       * dismiss input from dead player(s)
+       * play dead-scene sprite on all clients (in view of dead player)
+* Respawn dead players
+   * prevent spawn camping
+   * randomized spawns (pref. empty location;  spawnpoints > maxplayers)
 * Player comms / chat
 * Matchmaking
 * ...
+* ....
 * Player accounts DB
     * login
     * stats
