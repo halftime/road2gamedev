@@ -50,3 +50,6 @@
     * login
     * stats
     * ...
+
+
+![afbeelding](https://github.com/user-attachments/assets/c52cee2c-7cb9-4cdb-a0de-c3b4da97bd90)
