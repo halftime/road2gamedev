@@ -51,5 +51,10 @@
     * stats
     * ...
 
+### Issues
+* ClientKey event >> Server *collisions check* >> OK? >> update player position >> Broacast new position >> Clients
+   * too choppy for smooth movements
+   * >>> capture client extended key down?
+   * >>> move client ahead of notice to server?
 
 ![afbeelding](https://github.com/user-attachments/assets/c52cee2c-7cb9-4cdb-a0de-c3b4da97bd90)
